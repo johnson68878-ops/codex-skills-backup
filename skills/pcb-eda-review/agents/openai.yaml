@@ -1,0 +1,4 @@
+interface:
+  display_name: "PCB EDA Review"
+  short_description: "Evidence-backed OrCAD, Allegro, and PADS design reviews"
+  default_prompt: "Use $pcb-eda-review to review these PCB design artifacts and produce an evidence-backed issue report."

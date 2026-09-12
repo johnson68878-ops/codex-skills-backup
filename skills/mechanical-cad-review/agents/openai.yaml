@@ -1,0 +1,4 @@
+interface:
+  display_name: "Mechanical CAD Review"
+  short_description: "Evidence-backed Creo and SOLIDWORKS design reviews"
+  default_prompt: "Use $mechanical-cad-review to review these mechanical CAD artifacts and produce prioritized, evidence-backed findings."

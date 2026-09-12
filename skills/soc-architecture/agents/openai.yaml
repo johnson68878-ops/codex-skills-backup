@@ -1,0 +1,4 @@
+interface:
+  display_name: "SoC Architecture"
+  short_description: "Traceable SoC architecture analysis and specification review"
+  default_prompt: "Use $soc-architecture to analyze this SoC architecture problem and produce traceable decisions, assumptions, and open issues."
