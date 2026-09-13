@@ -4,9 +4,9 @@
     {
       "name": "agent-reach",
       "source": "skills/agent-reach",
-      "fileCount": 7,
-      "sizeBytes": 26251,
-      "sha256": "76cafa45eff8aac961db7d768fd1c27759f8c9b7d66a2f6a391182eb911ff988"
+      "fileCount": 8,
+      "sizeBytes": 29410,
+      "sha256": "01d9ef2825afd144ce0cfa28b928c3bd7da28dff4ba2414df46c8b7117bc0c5b"
     },
     {
       "name": "awesome-skills",

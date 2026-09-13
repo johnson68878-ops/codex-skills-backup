@@ -115,11 +115,11 @@
 
 ## 3. 已安裝檔案與執行依賴
 
-本次驗證的是：46 個來源目錄已備份、清單與內容一致、能從 Git 快照還原。**未對 46 個 Skill 所有外部整合逐一做線上或儀器實測。**
+本次完成兩層驗證。第一層確認 46 個來源目錄已備份、清單與內容一致、能從 Git 快照還原；第二層檢查 46 個 Skill 的本機 Markdown 參照及已知命令依賴。健康檢查結果為 **46／46、零斷鏈、零缺少已知命令**。這代表本機入口已備妥，不代表每個外部帳號、網站、公司儀器及雲端 API 都已授權。
 
-本輪 `Get-Command` 在目前 PowerShell PATH 可找到 git、gh、uv、node；python 命中 WindowsApps 別名，這單獨不能證明 Python runtime 正常。未命中 browser-use、firecrawl、defuddle、obsidian、editppt、superdesign、agent-reach。未命中不排除 npx、uv tool、其他環境或應用內置呼叫方式，但不能直接報告「全都已可執行」。
+已安裝並驗證的重點 runtime 包括 Node.js、npm／npx、Python、uv、Graphviz、ImageMagick、FFmpeg／FFprobe、`browser-use`、`browser-harness`、`firecrawl`、`defuddle`、`hyperframes`、`agent-reach`、`mcporter`、`yt-dlp`、`editppt` 與 Obsidian CLI。實際 smoke test 已通過 Browser Use 隔離 Chrome/CDP 開頁、Defuddle 擷取、Agent Reach 經 Exa 搜尋、Obsidian CLI、editppt doctor、codex-ppt doctor，以及 GitHub CLI 登入狀態。Figma 官方外掛已安裝並啟用，需在新任務或重啟 Codex 後載入工具並連接帳號。
 
-建議按真正要跑的工作完成依賴，而不是一次安裝所有 SDK。第一批檢查 Python 資料處理與測試環境、公司 CI／測試資料介面；需要 Web 測試再裝對應瀏覽器 runtime。API、儀器、Figma、雲端語音等需各自驗證連線。`agent-reach check-update` 本次未能執行，因 CLI 未在 PATH；因此不宣稱其 backend 或更新狀態正常。
+仍需使用者帳號或服務權限的項目：Firecrawl 與 Superdesign 登入；Speech／Transcribe 的 `OPENAI_API_KEY`；Figma 文件權限；社群平台 cookies／OpenCLI 擴充；以及讓 Browser Use 接管日常 Chrome 時手動啟用 remote debugging。YouTube 的公開 smoke test 遇到網站反機器人登入要求。這些屬於外部認證或網站限制，不能由 Skill 檔案及 PATH 安裝取代。完整證據見 [驗證報告](verification-2026-09-13.md)。
 
 ## 4. 額外值得補的現有 Skills
 

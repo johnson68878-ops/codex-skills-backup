@@ -99,6 +99,54 @@
       "relativePath": "openai-primary-runtime/spreadsheets/26.909.22227/skills/excel-live-control/SKILL.md"
     },
     {
+      "name": "figma-code-connect",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-code-connect/SKILL.md"
+    },
+    {
+      "name": "figma-create-new-file",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-create-new-file/SKILL.md"
+    },
+    {
+      "name": "figma-design-to-code",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-design-to-code/SKILL.md"
+    },
+    {
+      "name": "figma-generate-design",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-generate-design/SKILL.md"
+    },
+    {
+      "name": "figma-generate-diagram",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-generate-diagram/SKILL.md"
+    },
+    {
+      "name": "figma-generate-library",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-generate-library/SKILL.md"
+    },
+    {
+      "name": "figma-implement-motion",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-implement-motion/SKILL.md"
+    },
+    {
+      "name": "figma-swiftui",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-swiftui/SKILL.md"
+    },
+    {
+      "name": "figma-use",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-use/SKILL.md"
+    },
+    {
+      "name": "figma-use-figjam",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-use-figjam/SKILL.md"
+    },
+    {
+      "name": "figma-use-motion",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-use-motion/SKILL.md"
+    },
+    {
+      "name": "figma-use-slides",
+      "relativePath": "openai-curated-remote/figma/2.0.21/skills/figma-use-slides/SKILL.md"
+    },
+    {
       "name": "gh-address-comments",
       "relativePath": "openai-curated/github/82fd64bc/skills/gh-address-comments/SKILL.md"
     },

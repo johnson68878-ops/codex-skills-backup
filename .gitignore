@@ -14,6 +14,10 @@ task_plan.md
 findings.md
 progress.md
 .firecrawl/
+.mode
+.nonce
+.plan-attestation
+.stop_blocks
 Thumbs.db
 .DS_Store
 

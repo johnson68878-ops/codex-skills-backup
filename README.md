@@ -2,7 +2,7 @@
 
 Private backup of the personal Codex Skills installed on the Windows PC belonging to `johnson68878-ops`.
 
-This repository vendors **46 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (45) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files.
+This repository vendors **46 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (45) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has also passed the local 46-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
 
 Read the [46-Skill analysis and recommendations](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. No additional recommended Skills have been installed by this update.
 
@@ -45,6 +45,8 @@ Set-Location .\codex-skills-backup
 .\scripts\update-backup.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 .\scripts\verify.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 .\tests\SkillsBackup.Tests.ps1
+.\tests\SkillsHealth.Tests.ps1
+.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 46 -UseKnownRuntimeRequirements
 git status --short
 ```
 
@@ -56,4 +58,4 @@ Omit `-AdditionalSkillsRoot` if there is no additional Skill directory. Duplicat
 
 ## Plugin reconnection
 
-After restoring personal Skills, open Codex App and reconnect the plugins you need, such as GitHub and Google Drive. The inventory in `manifests/plugin-skills.json` documents what was available on the source PC, but it contains no credentials or authorization tokens.
+After restoring personal Skills, open Codex App and reconnect the plugins you need, such as GitHub, Google Drive and Figma. The inventory in `manifests/plugin-skills.json` documents what was available on the source PC, but it contains no credentials or authorization tokens. See [the dated verification report](docs/verification-2026-09-13.md) for the tested runtimes and remaining sign-in conditions.
