@@ -30,10 +30,14 @@ if ($UseKnownRuntimeRequirements) {
         'defuddle' = @('defuddle')
         'firecrawl' = @('firecrawl')
         'gh-fix-ci' = @('gh')
+        'huggingface-community-evals' = @('uv')
+        'huggingface-llm-trainer' = @('uv', 'hf')
+        'huggingface-local-models' = @('hf', 'llama-cli', 'llama-server', 'llama-quantize')
         'find-skills' = @('npx')
         'hyperframes' = @('hyperframes', 'ffmpeg', 'ffprobe')
         'image-to-editable-ppt' = @('editppt')
         'jupyter-notebook' = @('uv', 'python|py')
+        'mcp-builder' = @('node', 'npx', 'python|py')
         'obsidian-cli' = @('obsidian')
         'remotion-best-practices' = @('node', 'npm|pnpm')
         'screenshot' = @('pwsh')
@@ -41,6 +45,7 @@ if ($UseKnownRuntimeRequirements) {
         'superdesign' = @('npx')
         'transcribe' = @('python|py')
         'ui-ux-pro-max' = @('python|py')
+        'webapp-testing' = @('python|py', 'playwright')
         'writing-skills' = @('node')
     }
 }

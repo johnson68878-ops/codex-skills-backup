@@ -2,6 +2,13 @@
   "schemaVersion": 1,
   "skills": [
     {
+      "name": "advanced-evaluation",
+      "source": "skills/advanced-evaluation",
+      "fileCount": 6,
+      "sizeBytes": 61048,
+      "sha256": "9579cc4ead352b8ded7d415543eb1eb475c288ebbf609e23dfdfa11d343f9df8"
+    },
+    {
       "name": "agent-reach",
       "source": "skills/agent-reach",
       "fileCount": 8,
@@ -65,6 +72,13 @@
       "sha256": "09a03b40f55194f57dd9f03ddd3cf6bca56b29e26bca06af4782411e723ca2ae"
     },
     {
+      "name": "evaluation",
+      "source": "skills/evaluation",
+      "fileCount": 3,
+      "sizeBytes": 48455,
+      "sha256": "701019d6380a7076828c3199375fc5487a7f59a6cc5ba80fcde56149083f40fa"
+    },
+    {
       "name": "executing-plans",
       "source": "skills/executing-plans",
       "fileCount": 1,
@@ -121,6 +135,27 @@
       "sha256": "210f527c4248805af7db821d4dc20a7e43023e596a96cef9239dfa2293a8e049"
     },
     {
+      "name": "huggingface-community-evals",
+      "source": "skills/huggingface-community-evals",
+      "fileCount": 6,
+      "sizeBytes": 30100,
+      "sha256": "7457809f4c6dd727d2e95e10410e98820e74de9679dd7afa041c2a522615bb11"
+    },
+    {
+      "name": "huggingface-llm-trainer",
+      "source": "skills/huggingface-llm-trainer",
+      "fileCount": 19,
+      "sizeBytes": 186439,
+      "sha256": "bdc66d1b92cd8eab1b1786fc8a607e893bfa3d42129d33c4f77a6d4af9ae134e"
+    },
+    {
+      "name": "huggingface-local-models",
+      "source": "skills/huggingface-local-models",
+      "fileCount": 4,
+      "sizeBytes": 15849,
+      "sha256": "4bb813121dd1701df0ba4d4cbd4f09ed135c014faf0154602176795ab5277633"
+    },
+    {
       "name": "humanizer",
       "source": "skills/humanizer",
       "fileCount": 9,
@@ -161,6 +196,13 @@
       "fileCount": 12,
       "sizeBytes": 30864,
       "sha256": "c96c789546839fcea65f64b06d0830573eee484700921bf7e0553d5647f15ebd"
+    },
+    {
+      "name": "mcp-builder",
+      "source": "skills/mcp-builder",
+      "fileCount": 10,
+      "sizeBytes": 121756,
+      "sha256": "ec81ba0fa15ad953b0a18b0b0379fa9c0f6bd7b14f03d9a555f29280d309882b"
     },
     {
       "name": "mechanical-cad-review",
@@ -308,6 +350,13 @@
       "fileCount": 1,
       "sizeBytes": 3646,
       "sha256": "8ba3991726bd83a9ccdff71000be53b01287c457e634516655a662262b17449a"
+    },
+    {
+      "name": "webapp-testing",
+      "source": "skills/webapp-testing",
+      "fileCount": 6,
+      "sizeBytes": 22394,
+      "sha256": "16313166bb8d7b26fa72c83694e61a674aca6323249c2d21f462f6a5b835ad43"
     },
     {
       "name": "writing-plans",

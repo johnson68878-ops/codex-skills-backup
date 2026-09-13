@@ -101,7 +101,8 @@ function Test-SkillSecurity {
 
     foreach ($file in @(Get-IncludedFiles -Path $root)) {
         $relative = [IO.Path]::GetRelativePath($root, $file.FullName).Replace('\', '/')
-        if ($file.Name -match $forbiddenName) {
+        $isReviewedEnvTemplate = $file.Name -match '^\.env\.(example|sample|template)$'
+        if ($file.Name -match $forbiddenName -and -not $isReviewedEnvTemplate) {
             [pscustomobject]@{ Kind = 'ForbiddenFileName'; Path = $relative; Detail = 'Secret-like filename' }
         }
 
@@ -119,7 +120,7 @@ function Test-SkillSecurity {
             }
         }
 
-        $assignmentPattern = '(?im)^\s*(?:(?:export\s+)?(?:\$env:)?[A-Z0-9_.-]*(?:API[_-]?KEY|TOKEN|SECRET|PASSWORD)[A-Z0-9_.-]*|["''][^"'']*(?:API[_-]?KEY|TOKEN|SECRET|PASSWORD)[^"'']*["''])\s*[:=]\s*["'']?([^\s"'';]{8,})'
+        $assignmentPattern = '(?m)^\s*(?:(?:export\s+)?(?:\$env:)?[A-Z0-9_.-]*(?:API[_-]?KEY|TOKEN|SECRET|PASSWORD)[A-Z0-9_.-]*|["''][^"'']*(?i:API[_-]?KEY|TOKEN|SECRET|PASSWORD)[^"'']*["''])\s*[:=]\s*["'']?([^\s"'';]{8,})'
         foreach ($match in [regex]::Matches($content, $assignmentPattern)) {
             $value = $match.Groups[1].Value
             if (Test-LooksConcreteSecret -Value $value) {

@@ -2,9 +2,9 @@
 
 Private backup of the personal Codex Skills installed on the Windows PC belonging to `johnson68878-ops`.
 
-This repository vendors **46 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (45) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has also passed the local 46-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
+This repository vendors **53 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (52) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has passed the local 53-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
 
-Read the [46-Skill analysis and recommendations](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. No additional recommended Skills have been installed by this update.
+Read the [original 46-Skill analysis and seven installed additions](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. All seven recommendations in that report are now installed.
 
 ## Install on the company computer
 
@@ -18,7 +18,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\scripts\verify.ps1
 ```
 
-All 46 entries restore into `%USERPROFILE%\.codex\skills`. On a machine that already has a same-named Skill in `.agents\skills`, compare it before restoring to avoid cross-directory duplicates. Start a new conversation to refresh discovery; restart Codex App if the new Skills do not appear. Installing Skill files does not install their external CLIs or authorize external services.
+All 53 entries restore into `%USERPROFILE%\.codex\skills`. On a machine that already has a same-named Skill in `.agents\skills`, compare it before restoring to avoid cross-directory duplicates. Start a new conversation to refresh discovery; restart Codex App if the new Skills do not appear. Installing Skill files does not install their external CLIs or authorize external services.
 
 The installer is conservative:
 
@@ -46,7 +46,7 @@ Set-Location .\codex-skills-backup
 .\scripts\verify.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 .\tests\SkillsBackup.Tests.ps1
 .\tests\SkillsHealth.Tests.ps1
-.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 46 -UseKnownRuntimeRequirements
+.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 53 -UseKnownRuntimeRequirements
 git status --short
 ```
 

@@ -136,6 +136,10 @@ query_tokens = set(bm25.tokenize(query))
     $falsePositiveFindings = @(Test-SkillSecurity -Path $falsePositiveSkill)
     Assert-Equal -Actual $falsePositiveFindings.Count -Expected 0 -Message 'Security scan ignores design tokens, runtime variables, environment references, and public Algolia search keys'
 
+    Set-Content -LiteralPath (Join-Path $falsePositiveSkill '.env.example') -Encoding utf8NoBOM -Value "HF_TOKEN=your_huggingface_token_here"
+    $envTemplateFindings = @(Test-SkillSecurity -Path $falsePositiveSkill)
+    Assert-Equal -Actual $envTemplateFindings.Count -Expected 0 -Message 'Security scan accepts placeholder-only .env.example templates'
+
     $genericSecretSkill = Join-Path $testRoot 'generic-secret-skill'
     New-Item -ItemType Directory -Path $genericSecretSkill -Force | Out-Null
     Set-Content -LiteralPath (Join-Path $genericSecretSkill 'SKILL.md') -Encoding utf8NoBOM -Value "---`nname: generic-secret-skill`n---`nAPI_KEY=K9kLm2Np4Qr6St8Uv0Wx2Yz4Ab6Cd8Ef"

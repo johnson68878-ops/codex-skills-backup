@@ -1,24 +1,24 @@
 # Backup and runtime verification — 2026-09-13
 
-Scope: 46 personal Skill roots and 524 included files. Plugin files and account credentials are outside the portable backup; 56 plugin-provided Skills are inventoried separately.
+Scope: 53 personal Skill roots and 578 included files. Plugin files and account credentials are outside the portable backup; 56 plugin-provided Skills are inventoried separately.
 
 ## Backup integrity
 
-- Backup-module tests: 27 assertions passed.
-- Source verification against the generated manifest: 46 passed.
+- Backup-module tests: 28 assertions passed.
+- Source verification against the generated manifest: 53 passed.
 - Skill credential-pattern scan: zero findings. This is a heuristic scan, not a general security audit of every dependency.
 - The staged Git tree was archived as ZIP and extracted into a new temporary directory.
-- The extracted installer restored all 46 Skills into an empty temporary Codex home.
-- The extracted verifier accepted all 46 restored Skills by SHA-256 digest.
-- Archived Skill file count: 524, equal to the manifest and staged tracked file count.
-- The analysis document links every one of the 46 Skill roots.
+- The extracted installer restored all 53 Skills into an empty temporary Codex home.
+- The extracted verifier accepted all 53 restored Skills by SHA-256 digest.
+- Archived Skill file count: 578, equal to the manifest and staged tracked file count.
+- The analysis document covers the original 46 Skills and all seven installed additions.
 
 Module coverage includes two-source backup, restoration into one Skill directory, stable manifest generation, preservation of an overwritten Skill, WhatIf, rejection of modified installed content, duplicate-name rejection before snapshot changes, and credential-like fixture detection with reviewed non-secret exceptions.
 
 ## Local runtime readiness
 
 - Health-audit tests: 7 assertions passed.
-- Installed Skill audit: 46/46 discovered, zero broken local Markdown references, zero missing known command dependencies.
+- Installed Skill audit: 53/53 discovered, zero broken local Markdown references, zero missing known command dependencies.
 - Installed core runtimes include Node.js 24.19.0, npm/npx 11.17.0, Python, uv, Graphviz, ImageMagick, FFmpeg/FFprobe 9.0.1, Browser Use, Browser Harness, Firecrawl, Defuddle, HyperFrames, Agent Reach, mcporter, yt-dlp, editppt and Obsidian CLI.
 - Browser Use opened `https://example.com` through an isolated headless Chrome CDP session and returned page information.
 - Defuddle parsed `https://example.com` to Markdown.
@@ -27,6 +27,7 @@ Module coverage includes two-source backup, restoration into one Skill directory
 - editppt setup and doctor passed. codex-ppt runtime bootstrap and doctor passed.
 - GitHub CLI authentication for `johnson68878-ops` passed.
 - The official Figma plugin 2.0.21 is installed and enabled; its 12 provided Skills are included in the plugin inventory.
+- All seven recommended Skills are installed. Playwright 1.62.0 opened `https://example.com` in its bundled Chromium, llama.cpp build 10919 reported healthy CLI/server/quantizer versions, Hugging Face CLI 1.31.0 ran, and the inspect-ai and training-cost entry points returned help successfully.
 
 Run the repeatable checks in PowerShell 7.2 or newer:
 
@@ -34,14 +35,14 @@ Run the repeatable checks in PowerShell 7.2 or newer:
 .\tests\SkillsBackup.Tests.ps1
 .\tests\SkillsHealth.Tests.ps1
 .\scripts\verify.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
-.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 46 -UseKnownRuntimeRequirements
+.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 53 -UseKnownRuntimeRequirements
 ```
 
 On a restored computer containing every Skill in `.codex\skills`, omit `-AdditionalSkillsRoot` and audit that single root.
 
 ## External activation still required
 
-The 46/46 result proves local Skill structure and known command availability. It does not grant service accounts, API entitlements, browser cookies, access to company instruments, or access to private documents.
+The 53/53 result proves local Skill structure and known command availability. It does not grant service accounts, API entitlements, browser cookies, access to company instruments, or access to private documents.
 
 - Firecrawl and Superdesign commands run but require their respective account login for live service calls.
 - Speech and Transcribe scripts run, but live generation/transcription requires `OPENAI_API_KEY` to be configured locally.

@@ -1,14 +1,28 @@
-# 46 個 Skills：穿戴系統架構、程式開發與 AI 驗證適用性分析
+# 53 個 Skills：原 46 個能力分析與 7 個新增工程／AI Skills
 
-分析日期：2026-09-13。範圍為本次備份的 46 個個人 Skill 根目錄，不含 `.system`、外掛 Skills，也不把 Remotion 內部子模組重複計數。用途以本機各 `SKILL.md`、附帶腳本與資源為依據；優先級及工作流程是針對穿戴系統架構工程工作的建議，並非經實測的效能排名。
+分析日期：2026-09-13。第 1 節分析原有 46 個個人 Skill；第 4 節列出的 7 個推薦 Skill 已全部安裝，因此目前備份共 53 個。範圍不含 `.system` 與外掛 Skills，也不把 Remotion 內部子模組重複計數。用途以本機各 `SKILL.md`、附帶腳本與資源為依據；優先級及工作流程是針對穿戴系統架構工程工作的建議，並非經實測的效能排名。
+
+## 53 個 Skill 分類總表
+
+| 分類 | 數量 | 包含的 Skill | 對穿戴架構／AI 驗證工作的主要價值 |
+|---|---:|---|---|
+| 硬體與系統架構 | 3 | `soc-architecture`、`pcb-eda-review`、`mechanical-cad-review` | SoC、PCB、機構、介面、功耗、BOM、DFM/DFA 與設計證據審查。 |
+| 程式開發、交付與測試 | 19 | `brainstorming`、`writing-plans`、`planning-with-files`、`executing-plans`、`subagent-driven-development`、`dispatching-parallel-agents`、`using-git-worktrees`、`test-driven-development`、`systematic-debugging`、`receiving-code-review`、`requesting-code-review`、`code-review`、`verification-before-completion`、`finishing-a-development-branch`、`cli-creator`、`gh-fix-ci`、`jupyter-notebook`、`webapp-testing`、`mcp-builder` | 从需求、开发、Debug、测试到 CI/CD 交付；新增 Playwright Web 回归测试与工程数据 MCP 接口设计。 |
+| 研究、网页与浏览器自动化 | 5 | `agent-reach`、`firecrawl`、`defuddle`、`browser-use`、`screenshot` | 搜索公开资料、抓取网页、自动操作动态页面并保留截图证据。 |
+| 知识库与结构化资料 | 4 | `obsidian-cli`、`obsidian-markdown`、`obsidian-bases`、`json-canvas` | 建立工程知识库、结构化视图、追踪记录、关系图与故障树草图。 |
+| UI／UX 与设计落地 | 5 | `frontend-design`、`superdesign`、`figma`、`ui-ux-pro-max`、`humanizer` | 设计内部工具、验证面板和 App 界面，并改善说明文字与交互表达。 |
+| 简报、文件与多媒体 | 8 | `codex-ppt`、`guizang-ppt-skill`、`image-to-editable-ppt`、`remotion-best-practices`、`hyperframes`、`speech`、`transcribe`、`humanizer-zh` | 技术简报、可编辑 PPT、影片、语音、逐字稿及中文报告处理。 |
+| Skill 发现与维护 | 4 | `awesome-skills`、`find-skills`、`using-superpowers`、`writing-skills` | 查找、选择、编写与验证可重复使用的工程工作流程。 |
+| AI 评测与模型生命周期 | 5 | `evaluation`、`advanced-evaluation`、`huggingface-community-evals`、`huggingface-local-models`、`huggingface-llm-trainer` | 建立回归评测、LLM Judge 校准、本机 benchmark、GGUF 推理及 SFT／DPO／GRPO 训练流程。 |
+| **合计** | **53** | **52 个 `.codex` + 1 个 `.agents`** | 覆盖穿戴系统架构、程序开发、知识库、AI 验证及模型实验。 |
 
 ## 主要判斷
 
 這套組合已能支援需求拆解、寫程式、Debug、程式碼審查、架構文件與技術簡報。最值得補強的是 **AI 的固定評測集與回歸驗證、工程知識庫的來源與版本管理、硬體測試資料的自動匯入，以及系統需求到測試結果的追溯**。
 
-46 個 Skill 不等於 46 套已配置完成的工具，更不代表已訓練出離線模型。多數是操作規則、範本或程式入口；真正執行還取決於 Python/Node、CLI、模型端點、儀器介面或服務權限。
+53 個 Skill 不等於 53 套外部服務帳號，也不代表已訓練出離線模型。多數是操作規則、範本或程式入口；真正執行還取決於 Python/Node、CLI、模型端點、儀器介面或服務權限。
 
-對目前工作，建議常用 `soc-architecture`、`pcb-eda-review`、`mechanical-cad-review`、`cli-creator`、`jupyter-notebook`、`systematic-debugging`、`test-driven-development`、`verification-before-completion`；其他依任務叫用。AI 驗收則優先補 `evaluation`，而非再增加一組通用開發流程 Skill。
+對目前工作，建議常用 `soc-architecture`、`pcb-eda-review`、`mechanical-cad-review`、`cli-creator`、`jupyter-notebook`、`systematic-debugging`、`test-driven-development`、`verification-before-completion`；AI 验收以 `evaluation` 建立基线，再用 `advanced-evaluation` 校准模型评审，并用 `huggingface-community-evals` 做本机模型比较。
 
 ## 1. 46 個 Skill 逐項分析
 
@@ -115,7 +129,7 @@
 
 ## 3. 已安裝檔案與執行依賴
 
-本次完成兩層驗證。第一層確認 46 個來源目錄已備份、清單與內容一致、能從 Git 快照還原；第二層檢查 46 個 Skill 的本機 Markdown 參照及已知命令依賴。健康檢查結果為 **46／46、零斷鏈、零缺少已知命令**。這代表本機入口已備妥，不代表每個外部帳號、網站、公司儀器及雲端 API 都已授權。
+本次完成兩層驗證。第一層確認 53 個來源目錄已備份、清單與內容一致、能從 Git 快照還原；第二層檢查 53 個 Skill 的本機 Markdown 參照及已知命令依賴。健康檢查結果為 **53／53、零斷鏈、零缺少已知命令**。這代表本機入口已備妥，不代表每個外部帳號、網站、公司儀器及雲端 API 都已授權。
 
 已安裝並驗證的重點 runtime 包括 Node.js、npm／npx、Python、uv、Graphviz、ImageMagick、FFmpeg／FFprobe、`browser-use`、`browser-harness`、`firecrawl`、`defuddle`、`hyperframes`、`agent-reach`、`mcporter`、`yt-dlp`、`editppt` 與 Obsidian CLI。實際 smoke test 已通過 Browser Use 隔離 Chrome/CDP 開頁、Defuddle 擷取、Agent Reach 經 Exa 搜尋、Obsidian CLI、editppt doctor、codex-ppt doctor，以及 GitHub CLI 登入狀態。Figma 官方外掛已安裝並啟用，需在新任務或重啟 Codex 後載入工具並連接帳號。
 
@@ -123,7 +137,7 @@
 
 ## 4. 額外值得補的現有 Skills
 
-先查閱 [awesome-skills 即時清單](https://github.com/ningzimu/awesome-skills)，再閱讀候選的原始 Skill／README。下列推薦是角色適配判断；本輪僅研究，**沒有新增安裝**，所以備份仍為 46 個。第三方路徑可能隨版本更新，安裝時應釘住核對過的 commit 並包含相依資源。
+下列 7 個推薦已從各自原始 GitHub 倉庫全部安裝並納入備份。`evaluation`、`advanced-evaluation`、`webapp-testing`、`mcp-builder`、`huggingface-local-models`、`huggingface-community-evals`、`huggingface-llm-trainer` 現在都是本機 Skill；相關 Playwright、Chromium、Hugging Face CLI 與 llama.cpp runtime 亦已配置。
 
 | 優先順序 | 候選與原始來源 | 相較現有 46 個的增量 | 適合的第一個試點／依賴 |
 |---|---|---|---|
@@ -135,7 +149,7 @@
 | 6 | [huggingface-community-evals](https://github.com/huggingface/skills/blob/main/skills/huggingface-community-evals/SKILL.md) | 原始文件目前定位為透過 inspect-ai／lighteval 在本機評估模型。 | 比較本機模型與推理 backend；要有可用 GPU／runtime，Windows 支援須依實際 backend 核對。通用 benchmark 不能取代公司案例。 |
 | 後續 | [huggingface-llm-trainer](https://github.com/huggingface/skills/blob/main/skills/huggingface-llm-trainer/SKILL.md) | 涵蓋 SFT／DPO 等訓練工作流。 | 目前原始 Skill 主要依 Hugging Face Jobs 雲端 GPU，並非公司離線訓練的直接方案。只有資料、算力與部署路徑明確後再評估。 |
 
-若先補三個，選 `evaluation`、`webapp-testing`、`mcp-builder`。若當前任務就是建立本機模型服務，可把第三項換成 `huggingface-local-models`。這是依工作目標排序，而非認為更多 Skill 一定帶來更好結果。
+7 個候選已全部完成安裝。表內順序保留作為日常使用優先級，不再代表待安裝順序。
 
 另外，[Ragas 的官方指標清單](https://docs.ragas.io/en/stable/concepts/metrics/available_metrics/)列有 context precision／recall、faithfulness、工具呼叫等評估項目，適合知識庫問答驗證；它是評測工具／函式庫，**不是本次已核對並安裝的 Skill**。可將實際採用的測試方式封裝成公司自己的 Skill。
 
@@ -213,15 +227,15 @@ flowchart LR
 
 ## 9. 備份與證據範圍
 
-本次來源為 `.codex/skills` 45 個與 `.agents/skills` 的 agent-reach 1 個。雙來源更新與驗證可用：
+本次來源為 `.codex/skills` 52 個與 `.agents/skills` 的 agent-reach 1 個。雙來源更新與驗證可用：
 
 ```powershell
 .\scripts\update-backup.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 .\scripts\verify.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 ```
 
-還原到新電腦時，安裝器把 46 個全放進 `.codex/skills`。同名但內容不同的舊版先備份；再執行普通 verify。外掛清單只記錄檔案位置，不是可攜帶的帳號授權。
+還原到新電腦時，安裝器把 53 個全放進 `.codex/skills`。同名但內容不同的舊版先備份；再執行普通 verify。外掛清單只記錄檔案位置，不是可攜帶的帳號授權。
 
-原 `planning-with-files` 遺漏模板已由自帶初始化程式補建。這次 Git 快照保留修復版雜湊及換行保護；原始缺漏版與修復版本不可當成完全相同。研究結果沒有修改這 46 個 Skill 的上游設計規則，也沒有安裝推薦候選。
+原 `planning-with-files` 遺漏模板已由自帶初始化程式補建。這次 Git 快照保留修復版雜湊及換行保護；原始缺漏版與修復版本不可當成完全相同。新增 7 個 Skill 保留其上游內容，並一併接受備份安全掃描。
 
 本文件只包含通用職務場景與公開研究，不包含聊天截圖、人名、內部對話、工程規格、原始測試資料或帳號凭證。分析屬工作方法建議，不能取代實際產品的設計及發布驗收。
