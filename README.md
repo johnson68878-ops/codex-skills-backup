@@ -2,11 +2,13 @@
 
 Private backup of the personal Codex Skills installed on the Windows PC belonging to `johnson68878-ops`.
 
-This repository vendors personal Skills from `%USERPROFILE%\.codex\skills` and intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files.
+This repository vendors **46 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (45) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files.
+
+Read the [46-Skill analysis and recommendations](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. No additional recommended Skills have been installed by this update.
 
 ## Install on the company computer
 
-Open PowerShell and run:
+Open **PowerShell 7.2 or later** and run:
 
 ```powershell
 git clone https://github.com/johnson68878-ops/codex-skills-backup.git
@@ -16,7 +18,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\scripts\verify.ps1
 ```
 
-Restart Codex App after installation.
+All 46 entries restore into `%USERPROFILE%\.codex\skills`. On a machine that already has a same-named Skill in `.agents\skills`, compare it before restoring to avoid cross-directory duplicates. Start a new conversation to refresh discovery; restart Codex App if the new Skills do not appear. Installing Skill files does not install their external CLIs or authorize external services.
 
 The installer is conservative:
 
@@ -40,12 +42,17 @@ Verification checks every installed personal Skill against the SHA-256 digest st
 
 ```powershell
 Set-Location .\codex-skills-backup
-.\scripts\update-backup.ps1
+.\scripts\update-backup.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
+.\scripts\verify.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 .\tests\SkillsBackup.Tests.ps1
 git status --short
 ```
 
 Review the changes and security-scan result before committing and pushing.
+
+Omit `-AdditionalSkillsRoot` if there is no additional Skill directory. Duplicate names across roots are rejected before the old snapshot is changed. The additional path is an explicit local input and is not stored in the portable manifest. On a restored machine where all Skills are under `.codex\skills`, the ordinary verification command is sufficient.
+
+`.gitattributes` preserves Skill bytes so Git's newline conversion does not invalidate their digests. The three `planning-with-files` templates omitted by an earlier ignore rule were rebuilt from that Skill's bundled initializer; they are a documented repair, not recovered originals. The manifest records the repaired files.
 
 ## Plugin reconnection
 

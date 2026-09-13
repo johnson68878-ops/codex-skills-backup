@@ -1,7 +1,8 @@
 param(
     [string]$CodexHome = (Join-Path $env:USERPROFILE '.codex'),
     [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
-    [string]$PluginCacheRoot
+    [string]$PluginCacheRoot,
+    [string]$AdditionalSkillsRoot
 )
 
 Set-StrictMode -Version Latest
@@ -12,6 +13,21 @@ Import-Module (Join-Path $PSScriptRoot 'SkillsBackup.psm1') -Force
 $repository = (Resolve-Path -LiteralPath $RepositoryRoot).Path
 $sourceSkills = Join-Path $CodexHome 'skills'
 $sourceSkills = (Resolve-Path -LiteralPath $sourceSkills).Path
+$sourceRoots = @($sourceSkills)
+if ($AdditionalSkillsRoot) {
+    $sourceRoots += (Resolve-Path -LiteralPath $AdditionalSkillsRoot).Path
+}
+$discovered = @($sourceRoots | ForEach-Object { Get-SkillDirectories -Root $_ -Exclude @('.system') })
+$duplicates = @($discovered | Group-Object Name | Where-Object Count -gt 1)
+if ($duplicates.Count -gt 0) {
+    throw "Duplicate Skill names across source roots: $($duplicates.Name -join ', ')"
+}
+# Validate all sources before replacing the previous snapshot.
+foreach ($skill in $discovered) {
+    if (@(Test-SkillSecurity -Path $skill.FullName).Count -gt 0) {
+        throw "Security scan blocked Skill: $($skill.Name)"
+    }
+}
 $snapshotRoot = Join-Path $repository 'skills'
 $expectedSnapshot = [IO.Path]::GetFullPath((Join-Path $repository 'skills'))
 if ([IO.Path]::GetFullPath($snapshotRoot) -ne $expectedSnapshot) {
@@ -23,8 +39,7 @@ if (Test-Path -LiteralPath $snapshotRoot) {
 }
 New-Item -ItemType Directory -Path $snapshotRoot -Force | Out-Null
 
-$discovered = @(Get-SkillDirectories -Root $sourceSkills -Exclude @('.system'))
-$snapshot = @(Export-SkillsSnapshot -SourceRoot $sourceSkills -DestinationRoot $snapshotRoot -Exclude @('.system'))
+$snapshot = @($sourceRoots | ForEach-Object { Export-SkillsSnapshot -SourceRoot $_ -DestinationRoot $snapshotRoot -Exclude @('.system') })
 if ($snapshot.Count -ne $discovered.Count) {
     $blocked = foreach ($skill in $discovered) {
         $findings = @(Test-SkillSecurity -Path $skill.FullName)

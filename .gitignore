@@ -16,3 +16,8 @@ progress.md
 .firecrawl/
 Thumbs.db
 .DS_Store
+
+# Keep planning skill templates in backup
+!skills/planning-with-files/templates/task_plan.md
+!skills/planning-with-files/templates/findings.md
+!skills/planning-with-files/templates/progress.md

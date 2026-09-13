@@ -2,6 +2,20 @@
   "schemaVersion": 1,
   "skills": [
     {
+      "name": "agent-reach",
+      "source": "skills/agent-reach",
+      "fileCount": 7,
+      "sizeBytes": 26251,
+      "sha256": "76cafa45eff8aac961db7d768fd1c27759f8c9b7d66a2f6a391182eb911ff988"
+    },
+    {
+      "name": "awesome-skills",
+      "source": "skills/awesome-skills",
+      "fileCount": 2,
+      "sizeBytes": 2352,
+      "sha256": "db4387023f68361e7dfa87c04e63309fd272301add3cc135b29cb07d86508e1f"
+    },
+    {
       "name": "brainstorming",
       "source": "skills/brainstorming",
       "fileCount": 8,
@@ -28,6 +42,20 @@
       "fileCount": 2,
       "sizeBytes": 6689,
       "sha256": "e964811226326c9aece46ab4885023ff957b4cc63ea14ec12bd7f3e9d6fbf70e"
+    },
+    {
+      "name": "codex-ppt",
+      "source": "skills/codex-ppt",
+      "fileCount": 38,
+      "sizeBytes": 252830,
+      "sha256": "0123ab4d0cc57e4a1f68fe6f65aac3816e6dcdd997dec9da1e521bfc0f83ae2a"
+    },
+    {
+      "name": "defuddle",
+      "source": "skills/defuddle",
+      "fileCount": 1,
+      "sizeBytes": 1123,
+      "sha256": "283815b08645d44a3f0edde31ba0ce85c2ab896ad6449cc91422e50eabc7ce4c"
     },
     {
       "name": "dispatching-parallel-agents",
@@ -100,11 +128,32 @@
       "sha256": "8ffca59a04b3aa5ba9b8dad31f401a4a7f76a435f3da1421b66da55c87fc975a"
     },
     {
+      "name": "humanizer-zh",
+      "source": "skills/humanizer-zh",
+      "fileCount": 4,
+      "sizeBytes": 27801,
+      "sha256": "e3135c9724d646c5157f8e8a47788ff97c36d0d5afc764d77ce9a378a7fa37b5"
+    },
+    {
       "name": "hyperframes",
       "source": "skills/hyperframes",
       "fileCount": 17,
       "sizeBytes": 65945,
       "sha256": "b6d38574b5fb2dc2bdc4bdd4bdc2b6df85bd41955b19499986e2de3dddaf234d"
+    },
+    {
+      "name": "image-to-editable-ppt",
+      "source": "skills/image-to-editable-ppt",
+      "fileCount": 36,
+      "sizeBytes": 384373,
+      "sha256": "fa58a1efbe7758d8f753317d0ccf622659ad97689e4c80320c5cd8dd821deecd"
+    },
+    {
+      "name": "json-canvas",
+      "source": "skills/json-canvas",
+      "fileCount": 2,
+      "sizeBytes": 14100,
+      "sha256": "501d63da0ad69caebf4c99b54518ae722c68d8a491096f0d6f6dcfbe08c69f2b"
     },
     {
       "name": "jupyter-notebook",
@@ -121,6 +170,27 @@
       "sha256": "851a0eadbfccdee81c68b3d79f37d923599b9ecc80c28825cb9c2a16fdcef13e"
     },
     {
+      "name": "obsidian-bases",
+      "source": "skills/obsidian-bases",
+      "fileCount": 2,
+      "sizeBytes": 20565,
+      "sha256": "045d787cc1ae898e853c89efbf942d6bdc1920fe68323b8230df2e5bdadc2232"
+    },
+    {
+      "name": "obsidian-cli",
+      "source": "skills/obsidian-cli",
+      "fileCount": 1,
+      "sizeBytes": 3183,
+      "sha256": "5270cea782a24748f4d512df1047f4c7eeb0fc85f56a2938627ef32c49e7b1bf"
+    },
+    {
+      "name": "obsidian-markdown",
+      "source": "skills/obsidian-markdown",
+      "fileCount": 4,
+      "sizeBytes": 8615,
+      "sha256": "6980adcfcfe20230e0d8a899832b2ddde7857221fee07c10b6bbbe6011dd4236"
+    },
+    {
       "name": "pcb-eda-review",
       "source": "skills/pcb-eda-review",
       "fileCount": 4,
@@ -131,8 +201,8 @@
       "name": "planning-with-files",
       "source": "skills/planning-with-files",
       "fileCount": 32,
-      "sizeBytes": 397358,
-      "sha256": "82206491bae586dbc4cb6bbdbca461c56f1622ca07c53d1fe58ca939ba8c052c"
+      "sizeBytes": 393835,
+      "sha256": "40ff63504675c8b3cc8670bdf106eeeef7998b21299aa3d8bbe0cb392e5b1a9f"
     },
     {
       "name": "receiving-code-review",
@@ -184,6 +254,13 @@
       "sha256": "7d4e2992e72dfe4ad53fe653d63e8d9aeffea2ee7fe60672020be8b5720bed66"
     },
     {
+      "name": "superdesign",
+      "source": "skills/superdesign",
+      "fileCount": 10,
+      "sizeBytes": 78189,
+      "sha256": "1d7124e52dfd48b86752013fb4b4db89b288461cc279ec93ff7c4d89ba52fd90"
+    },
+    {
       "name": "systematic-debugging",
       "source": "skills/systematic-debugging",
       "fileCount": 11,
@@ -203,6 +280,13 @@
       "fileCount": 7,
       "sizeBytes": 25203,
       "sha256": "dfd5503651a3f2ae52018bd0f85f56f57b5ac2c439b8ec167d3c7b651aae99ce"
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "skills/ui-ux-pro-max",
+      "fileCount": 44,
+      "sizeBytes": 1763387,
+      "sha256": "386158a16080e5125a5436e163e721876c3f09c1f53d90c4a6ed44399becfe21"
     },
     {
       "name": "using-git-worktrees",

@@ -1,0 +1,3 @@
+* text=auto eol=lf
+# Preserve vendored bytes (including upstream whitespace) used by the manifest.
+skills/** -text -whitespace

@@ -1,6 +1,7 @@
 param(
     [string]$RepositoryRoot = (Split-Path -Parent $PSScriptRoot),
-    [string]$CodexHome = (Join-Path $env:USERPROFILE '.codex')
+    [string]$CodexHome = (Join-Path $env:USERPROFILE '.codex'),
+    [string]$AdditionalSkillsRoot
 )
 
 Set-StrictMode -Version Latest
@@ -15,6 +16,9 @@ $failures = [Collections.Generic.List[string]]::new()
 
 foreach ($skill in @($manifest.skills)) {
     $target = Join-Path $skillsRoot $skill.name
+    if (-not (Test-Path -LiteralPath $target) -and $AdditionalSkillsRoot) {
+        $target = Join-Path $AdditionalSkillsRoot $skill.name
+    }
     if (-not (Test-Path -LiteralPath (Join-Path $target 'SKILL.md') -PathType Leaf)) {
         $failures.Add("Missing: $($skill.name)")
         continue

@@ -84,7 +84,7 @@
     },
     {
       "name": "computer-use",
-      "relativePath": "openai-bundled/computer-use/26.908.40834/skills/computer-use/SKILL.md"
+      "relativePath": "openai-bundled/computer-use/26.903.71938/skills/computer-use/SKILL.md"
     },
     {
       "name": "deep-research",
@@ -100,15 +100,15 @@
     },
     {
       "name": "gh-address-comments",
-      "relativePath": "openai-curated/github/11c74d6b/skills/gh-address-comments/SKILL.md"
+      "relativePath": "openai-curated/github/82fd64bc/skills/gh-address-comments/SKILL.md"
     },
     {
       "name": "gh-fix-ci",
-      "relativePath": "openai-curated/github/11c74d6b/skills/gh-fix-ci/SKILL.md"
+      "relativePath": "openai-curated/github/82fd64bc/skills/gh-fix-ci/SKILL.md"
     },
     {
       "name": "github",
-      "relativePath": "openai-curated/github/11c74d6b/skills/github/SKILL.md"
+      "relativePath": "openai-curated/github/82fd64bc/skills/github/SKILL.md"
     },
     {
       "name": "google-docs",
@@ -144,7 +144,7 @@
     },
     {
       "name": "sites-building",
-      "relativePath": "openai-bundled/sites/0.1.57/skills/sites-building/SKILL.md"
+      "relativePath": "openai-bundled/sites/0.1.66/skills/sites-building/SKILL.md"
     },
     {
       "name": "sites-building",
@@ -152,7 +152,7 @@
     },
     {
       "name": "sites-hosting",
-      "relativePath": "openai-bundled/sites/0.1.57/skills/sites-hosting/SKILL.md"
+      "relativePath": "openai-bundled/sites/0.1.66/skills/sites-hosting/SKILL.md"
     },
     {
       "name": "sites-hosting",
@@ -172,11 +172,11 @@
     },
     {
       "name": "visualize",
-      "relativePath": "openai-bundled/visualize/1.0.37/skills/visualize/SKILL.md"
+      "relativePath": "openai-bundled/visualize/1.0.32/skills/visualize/SKILL.md"
     },
     {
       "name": "yeet",
-      "relativePath": "openai-curated/github/11c74d6b/skills/yeet/SKILL.md"
+      "relativePath": "openai-curated/github/82fd64bc/skills/yeet/SKILL.md"
     }
   ]
 }

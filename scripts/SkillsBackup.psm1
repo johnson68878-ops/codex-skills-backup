@@ -65,6 +65,11 @@ function Test-LooksConcreteSecret {
     param([string]$Value)
 
     $candidate = $Value.Trim().TrimEnd(',', ';')
+    # Reviewed non-secret values in vendored skill source. Keep this exact;
+    # arbitrary URLs and arbitrary token assignments still need scanning.
+    if ($candidate -in @('https://aistudio.baidu.com/account/accessToken', 'set(bm25.tokenize(query))')) {
+        return $false
+    }
     if ($candidate.Length -lt 16 -or (Test-IsPlaceholderSecret -Value $candidate)) {
         return $false
     }

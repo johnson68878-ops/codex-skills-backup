@@ -130,6 +130,8 @@ spacing token: `--sp-2` 4 / `--sp-3` 8
 $token = "phase-status-" + $PID + [Guid]::NewGuid().ToString("N")
 maptilersdk.config.apiKey = process.env.REMOTION_MAPTILER_TOKEN as string;
 POST https://public-dsn.algolia.net/1/indexes/*/queries?x-algolia-api-key=abcdefghijklmnopqrstuvwx1234567890ABCDEFGHIJKLMNOP
+PADDLE_TOKEN_APPLY_URL = "https://aistudio.baidu.com/account/accessToken"
+query_tokens = set(bm25.tokenize(query))
 '@
     $falsePositiveFindings = @(Test-SkillSecurity -Path $falsePositiveSkill)
     Assert-Equal -Actual $falsePositiveFindings.Count -Expected 0 -Message 'Security scan ignores design tokens, runtime variables, environment references, and public Algolia search keys'
@@ -139,6 +141,27 @@ POST https://public-dsn.algolia.net/1/indexes/*/queries?x-algolia-api-key=abcdef
     Set-Content -LiteralPath (Join-Path $genericSecretSkill 'SKILL.md') -Encoding utf8NoBOM -Value "---`nname: generic-secret-skill`n---`nAPI_KEY=K9kLm2Np4Qr6St8Uv0Wx2Yz4Ab6Cd8Ef"
     $genericSecretFindings = @(Test-SkillSecurity -Path $genericSecretSkill)
     Assert-True -Condition ($genericSecretFindings.Kind -contains 'SecretContent') -Message 'Security scan still detects an unprefixed high-entropy API key value'
+
+    $additionalRoot = Join-Path $testRoot 'agent-skills'
+    $additionalSkill = Join-Path $additionalRoot 'shared-skill'
+    New-Item -ItemType Directory -Path $additionalSkill -Force | Out-Null
+    Set-Content -LiteralPath (Join-Path $additionalSkill 'SKILL.md') -Value "---`nname: shared-skill`n---`n# Shared" -Encoding utf8NoBOM
+    & $updateScript -CodexHome $fixtureCodex -RepositoryRoot $fixtureRepo -AdditionalSkillsRoot $additionalRoot
+    $combined = Get-Content (Join-Path $fixtureRepo 'manifests\personal-skills.json') -Raw | ConvertFrom-Json
+    Assert-Equal -Actual @($combined.skills).Count -Expected 2 -Message 'Update includes both personal skill roots'
+    & $verifyScript -RepositoryRoot $fixtureRepo -CodexHome $fixtureCodex -AdditionalSkillsRoot $additionalRoot
+    & $installScript -RepositoryRoot $fixtureRepo -CodexHome $targetCodex -BackupTimestamp 'combined'
+    & $verifyScript -RepositoryRoot $fixtureRepo -CodexHome $targetCodex
+    Assert-True -Condition (Test-Path (Join-Path $targetCodex 'skills\shared-skill\SKILL.md')) -Message 'Combined snapshot restores to a single Codex skills directory'
+
+    $beforeDuplicate = Get-Content (Join-Path $fixtureRepo 'manifests\personal-skills.json') -Raw
+    Copy-Item -LiteralPath $valid -Destination (Join-Path $additionalRoot 'valid-skill') -Recurse
+    $duplicateRejected = $false
+    try { & $updateScript -CodexHome $fixtureCodex -RepositoryRoot $fixtureRepo -AdditionalSkillsRoot $additionalRoot }
+    catch { $duplicateRejected = $_.Exception.Message -like 'Duplicate Skill names*' }
+    Assert-True -Condition $duplicateRejected -Message 'Duplicate source names are rejected'
+    Assert-Equal -Actual (Get-Content (Join-Path $fixtureRepo 'manifests\personal-skills.json') -Raw) -Expected $beforeDuplicate -Message 'Rejected source preserves existing manifest'
+    & $verifyScript -RepositoryRoot $fixtureRepo -CodexHome $targetCodex
 }
 finally {
     if ($testRoot.StartsWith([IO.Path]::GetTempPath(), [StringComparison]::OrdinalIgnoreCase) -and (Test-Path -LiteralPath $testRoot)) {

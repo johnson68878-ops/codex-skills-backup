@@ -1,0 +1,462 @@
+[
+  {
+    "name": "agent-reach",
+    "sourceRoot": "agents",
+    "repositoryPath": "skills/agent-reach",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 7,
+    "sha256": "76cafa45eff8aac961db7d768fd1c27759f8c9b7d66a2f6a391182eb911ff988"
+  },
+  {
+    "name": "awesome-skills",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/awesome-skills",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "db4387023f68361e7dfa87c04e63309fd272301add3cc135b29cb07d86508e1f"
+  },
+  {
+    "name": "brainstorming",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/brainstorming",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 8,
+    "sha256": "358c04b900b1fb0bb7383dce276f873ca1e2730ef0b07845271b5734eb34d4dc"
+  },
+  {
+    "name": "browser-use",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/browser-use",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "7ab68623aaabc6bb2930fced4508f97bd66ead381839ec9dccea29855a803230"
+  },
+  {
+    "name": "cli-creator",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/cli-creator",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 4,
+    "sha256": "94d3193e6d0f654e5971930d546097e49774ff2a0da3e3414e0678937ba0eab6"
+  },
+  {
+    "name": "code-review",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/code-review",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "e964811226326c9aece46ab4885023ff957b4cc63ea14ec12bd7f3e9d6fbf70e"
+  },
+  {
+    "name": "codex-ppt",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/codex-ppt",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 38,
+    "sha256": "0123ab4d0cc57e4a1f68fe6f65aac3816e6dcdd997dec9da1e521bfc0f83ae2a"
+  },
+  {
+    "name": "defuddle",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/defuddle",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "283815b08645d44a3f0edde31ba0ce85c2ab896ad6449cc91422e50eabc7ce4c"
+  },
+  {
+    "name": "dispatching-parallel-agents",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/dispatching-parallel-agents",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "09a03b40f55194f57dd9f03ddd3cf6bca56b29e26bca06af4782411e723ca2ae"
+  },
+  {
+    "name": "executing-plans",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/executing-plans",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "5b6ec125c94c5be4232c6c5352bdd9f33dadff931d32e4543d1d21b4ca7c016c"
+  },
+  {
+    "name": "figma",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/figma",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 8,
+    "sha256": "dd74692cfe19449d5ab0f7e9940d1a90c88073dad44d9eda346f0d016d2ff7f8"
+  },
+  {
+    "name": "find-skills",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/find-skills",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "3345a412fa273126511a93c88265e62d62e2a21e808b99e83333cac20a96df79"
+  },
+  {
+    "name": "finishing-a-development-branch",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/finishing-a-development-branch",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "2d76277a3910b39d80992978a6b8d42bcb9f4456ec689f4dc9109ede5c09b954"
+  },
+  {
+    "name": "firecrawl",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/firecrawl",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 3,
+    "sha256": "4839063d92c817a2ec2410ab35ce781303c662994390e902bcfb42933391c282"
+  },
+  {
+    "name": "frontend-design",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/frontend-design",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": true,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "a4e6516a601f72ffd8bcd0d64609e8ba724d2ce92569a059a6890a5caadf072b"
+  },
+  {
+    "name": "gh-fix-ci",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/gh-fix-ci",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": "github",
+    "fileCount": 6,
+    "sha256": "0236ac399e18ed8258c7960ee7402e2200277d66374a17448f2f8f72b8bd2a33"
+  },
+  {
+    "name": "guizang-ppt-skill",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/guizang-ppt-skill",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 41,
+    "sha256": "210f527c4248805af7db821d4dc20a7e43023e596a96cef9239dfa2293a8e049"
+  },
+  {
+    "name": "humanizer",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/humanizer",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 9,
+    "sha256": "8ffca59a04b3aa5ba9b8dad31f401a4a7f76a435f3da1421b66da55c87fc975a"
+  },
+  {
+    "name": "humanizer-zh",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/humanizer-zh",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 4,
+    "sha256": "e3135c9724d646c5157f8e8a47788ff97c36d0d5afc764d77ce9a378a7fa37b5"
+  },
+  {
+    "name": "hyperframes",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/hyperframes",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 17,
+    "sha256": "b6d38574b5fb2dc2bdc4bdd4bdc2b6df85bd41955b19499986e2de3dddaf234d"
+  },
+  {
+    "name": "image-to-editable-ppt",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/image-to-editable-ppt",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 36,
+    "sha256": "fa58a1efbe7758d8f753317d0ccf622659ad97689e4c80320c5cd8dd821deecd"
+  },
+  {
+    "name": "json-canvas",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/json-canvas",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "501d63da0ad69caebf4c99b54518ae722c68d8a491096f0d6f6dcfbe08c69f2b"
+  },
+  {
+    "name": "jupyter-notebook",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/jupyter-notebook",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 12,
+    "sha256": "c96c789546839fcea65f64b06d0830573eee484700921bf7e0553d5647f15ebd"
+  },
+  {
+    "name": "mechanical-cad-review",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/mechanical-cad-review",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 4,
+    "sha256": "851a0eadbfccdee81c68b3d79f37d923599b9ecc80c28825cb9c2a16fdcef13e"
+  },
+  {
+    "name": "obsidian-bases",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/obsidian-bases",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "045d787cc1ae898e853c89efbf942d6bdc1920fe68323b8230df2e5bdadc2232"
+  },
+  {
+    "name": "obsidian-cli",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/obsidian-cli",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "5270cea782a24748f4d512df1047f4c7eeb0fc85f56a2938627ef32c49e7b1bf"
+  },
+  {
+    "name": "obsidian-markdown",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/obsidian-markdown",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 4,
+    "sha256": "6980adcfcfe20230e0d8a899832b2ddde7857221fee07c10b6bbbe6011dd4236"
+  },
+  {
+    "name": "pcb-eda-review",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/pcb-eda-review",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 4,
+    "sha256": "25b6ced399a5c0414f57d493d5448009644626de8c4fd8e6d519d62d7f13428a"
+  },
+  {
+    "name": "planning-with-files",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/planning-with-files",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 32,
+    "sha256": "40ff63504675c8b3cc8670bdf106eeeef7998b21299aa3d8bbe0cb392e5b1a9f"
+  },
+  {
+    "name": "receiving-code-review",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/receiving-code-review",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "9308eecc765204e03381975b7aac6aa62f3761e663b1f25cb77106f7e8f0ae0b"
+  },
+  {
+    "name": "remotion-best-practices",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/remotion-best-practices",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 137,
+    "sha256": "b090d022b39c3b02caa30abe48efbcba3a66f9a91c7d5f8bc4cf4ca8c4154086"
+  },
+  {
+    "name": "requesting-code-review",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/requesting-code-review",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "7ac85ca1553e114cbbdaf2172a6c0f0dbad64ac26d147a798f1a8603637cd17b"
+  },
+  {
+    "name": "screenshot",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/screenshot",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 11,
+    "sha256": "4108f207cacbf361b72209423c55d4ab105001aabfeba8a44807fef737e9ffb0"
+  },
+  {
+    "name": "soc-architecture",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/soc-architecture",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 4,
+    "sha256": "876e1d0b3be3f34db8538b215b189b025fbe0c5b4aa6fdab95100380eb436c1f"
+  },
+  {
+    "name": "speech",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/speech",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 16,
+    "sha256": "2577f07e91925207e9652844b041144f19f667461332c0adf13375696b26c4ce"
+  },
+  {
+    "name": "subagent-driven-development",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/subagent-driven-development",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 7,
+    "sha256": "7d4e2992e72dfe4ad53fe653d63e8d9aeffea2ee7fe60672020be8b5720bed66"
+  },
+  {
+    "name": "superdesign",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/superdesign",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 10,
+    "sha256": "1d7124e52dfd48b86752013fb4b4db89b288461cc279ec93ff7c4d89ba52fd90"
+  },
+  {
+    "name": "systematic-debugging",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/systematic-debugging",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 11,
+    "sha256": "dd8d2a5cb07d2acaabe061b6fc8f4f9907007e88f8905d2d3502d8bd07d7bf58"
+  },
+  {
+    "name": "test-driven-development",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/test-driven-development",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "de65154a0806114e923882a5f5a8a91acc1720ffaf47637d9eae3f43b8e459a2"
+  },
+  {
+    "name": "transcribe",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/transcribe",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 7,
+    "sha256": "dfd5503651a3f2ae52018bd0f85f56f57b5ac2c439b8ec167d3c7b651aae99ce"
+  },
+  {
+    "name": "ui-ux-pro-max",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/ui-ux-pro-max",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 44,
+    "sha256": "386158a16080e5125a5436e163e721876c3f09c1f53d90c4a6ed44399becfe21"
+  },
+  {
+    "name": "using-git-worktrees",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/using-git-worktrees",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "d8bf015a3dc3793df0449e2789c547523142193d2f2ca9f66dfee0856be0629a"
+  },
+  {
+    "name": "using-superpowers",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/using-superpowers",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 6,
+    "sha256": "beebb83ad8107aaafffe67f21c4eb9f8b6536506027483f4da2295242856d106"
+  },
+  {
+    "name": "verification-before-completion",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/verification-before-completion",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 1,
+    "sha256": "8ba3991726bd83a9ccdff71000be53b01287c457e634516655a662262b17449a"
+  },
+  {
+    "name": "writing-plans",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/writing-plans",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 2,
+    "sha256": "2ef6e2879eef6e3fa0257d5f3cc9f08e01a250011e6b224f57db4dbf94557b70"
+  },
+  {
+    "name": "writing-skills",
+    "sourceRoot": "codex",
+    "repositoryPath": "skills/writing-skills",
+    "matchesInstalledSource": true,
+    "duplicateBeforeInitialImport": false,
+    "sameNamePlugin": null,
+    "fileCount": 7,
+    "sha256": "890c5139ef542ae9f05de1149954df1fc17917c6aed6fe9d76a30e3ff264b699"
+  }
+]
