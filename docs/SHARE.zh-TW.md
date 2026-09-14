@@ -1,6 +1,6 @@
 # 53 Codex Skills 分享文案
 
-![53 Codex Skills](assets/53-codex-skills-banner.png)
+![53 Codex Skills — SA 工程施作能力地圖](assets/53-codex-skills-sa-infographic.png)
 
 ## 繁體中文版
 
@@ -20,6 +20,8 @@
 
 GitHub：<https://github.com/johnson68878-ops/codex-skills-backup>
 
+一次安裝說明：<https://github.com/johnson68878-ops/codex-skills-backup/blob/main/docs/INSTALL-WITH-CODEX.zh-TW.md>
+
 歡迎參考、交流或依自己的工程環境調整。各 Skill 的原作者及授權條款仍以其上游來源為準。
 
 ## 简体中文版
@@ -30,6 +32,8 @@ GitHub：<https://github.com/johnson68878-ops/codex-skills-backup>
 
 GitHub：<https://github.com/johnson68878-ops/codex-skills-backup>
 
+一次安装说明：<https://github.com/johnson68878-ops/codex-skills-backup/blob/main/docs/INSTALL-WITH-CODEX.zh-TW.md>
+
 欢迎参考和交流。第三方 Skill 的作者与授权条款以各自上游来源为准。
 
 ## English version
@@ -39,6 +43,8 @@ I assembled, installed and verified a collection of **53 Codex Skills** for wear
 It covers system and hardware reviews, development and testing workflows, browser automation, engineering knowledge systems, MCP/CLI interfaces, AI evaluation, local GGUF models and model-training workflows. All **53/53 Skills pass the local structure and known-command dependency audit**, with reproducible installation scripts, SHA-256 manifests and a detailed verification report included.
 
 GitHub: <https://github.com/johnson68878-ops/codex-skills-backup>
+
+Installation guide: <https://github.com/johnson68878-ops/codex-skills-backup/blob/main/docs/INSTALL-WITH-CODEX.zh-TW.md>
 
 Contributions and technical discussion are welcome. Third-party Skills retain their original authorship and license terms.
 

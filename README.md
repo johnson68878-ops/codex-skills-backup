@@ -1,6 +1,6 @@
 # Codex Skills Backup
 
-![53 Codex Skills — Wearable Systems, Software Engineering and AI Validation](docs/assets/53-codex-skills-banner.png)
+![53 Codex Skills — SA Engineering Capability Map](docs/assets/53-codex-skills-sa-infographic.png)
 
 [![Skills](https://img.shields.io/badge/Personal%20Skills-53-00bcd4)](manifests/personal-skills.json)
 [![Verification](https://img.shields.io/badge/Verification-53%2F53-success)](docs/verification-2026-09-13.md)
@@ -13,6 +13,8 @@ This is a shareable, reproducible collection of 53 Skills assembled, installed a
 This repository vendors **53 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (52) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has passed the local 53-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
 
 Read the [original 46-Skill analysis and seven installed additions](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. All seven recommendations in that report are now installed.
+
+To install the complete collection through Codex, copy the ready-made prompt in [Install all 53 Skills with Codex](docs/INSTALL-WITH-CODEX.zh-TW.md). The same guide includes a direct PowerShell command.
 
 ## Install on the company computer
 
