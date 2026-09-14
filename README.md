@@ -1,6 +1,14 @@
 # Codex Skills Backup
 
-Private backup of the personal Codex Skills installed on the Windows PC belonging to `johnson68878-ops`.
+![53 Codex Skills — Wearable Systems, Software Engineering and AI Validation](docs/assets/53-codex-skills-banner.png)
+
+[![Skills](https://img.shields.io/badge/Personal%20Skills-53-00bcd4)](manifests/personal-skills.json)
+[![Verification](https://img.shields.io/badge/Verification-53%2F53-success)](docs/verification-2026-09-13.md)
+[![Platform](https://img.shields.io/badge/Platform-Codex-2563eb)](https://github.com/openai/codex)
+
+Reproducible backup of the personal Codex Skills installed and verified by `johnson68878-ops`.
+
+This is a shareable, reproducible collection of 53 Skills assembled, installed and verified for wearable-system architecture, software engineering, web automation, knowledge workflows and AI evaluation. Individual Skills retain their upstream authorship and license terms; this repository does not claim original authorship of third-party content.
 
 This repository vendors **53 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (52) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has passed the local 53-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
 
