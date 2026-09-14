@@ -1,6 +1,8 @@
 # Codex Skills Backup
 
-![53 Codex Skills — SA Engineering Capability Map](docs/assets/53-codex-skills-sa-infographic.png)
+![53 Codex Skills — Complete SA Engineering Directory](docs/assets/53-codex-skills-complete-directory.png)
+
+[Compact capability-map version](docs/assets/53-codex-skills-sa-infographic.png)
 
 [![Skills](https://img.shields.io/badge/Personal%20Skills-53-00bcd4)](manifests/personal-skills.json)
 [![Verification](https://img.shields.io/badge/Verification-53%2F53-success)](docs/verification-2026-09-13.md)

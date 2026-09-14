@@ -1,6 +1,8 @@
 # 53 Codex Skills 分享文案
 
-![53 Codex Skills — SA 工程施作能力地圖](assets/53-codex-skills-sa-infographic.png)
+![53 Codex Skills — SA 工程施作完整名錄](assets/53-codex-skills-complete-directory.png)
+
+[精簡能力地圖版本](assets/53-codex-skills-sa-infographic.png)
 
 ## 繁體中文版
 
