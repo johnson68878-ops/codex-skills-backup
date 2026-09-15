@@ -111,6 +111,7 @@ function Test-SkillSecurity {
         }
 
         $content = Get-Content -LiteralPath $file.FullName -Raw -ErrorAction Stop
+        if ($null -eq $content) { $content = '' }
         foreach ($pattern in $tokenPatterns) {
             foreach ($match in [regex]::Matches($content, $pattern)) {
                 if (-not (Test-IsPlaceholderSecret -Value $match.Value)) {

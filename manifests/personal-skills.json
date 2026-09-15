@@ -2,6 +2,20 @@
   "schemaVersion": 1,
   "skills": [
     {
+      "name": "5why-root-cause",
+      "source": "skills/5why-root-cause",
+      "fileCount": 2,
+      "sizeBytes": 17124,
+      "sha256": "8da51a9f7e0558c0125694ab487df2193fc64c469ac7b0d5fe303ec778b8a663"
+    },
+    {
+      "name": "action-priority-ap",
+      "source": "skills/action-priority-ap",
+      "fileCount": 2,
+      "sizeBytes": 18946,
+      "sha256": "897806576a24a71e70d70ae7bcc461398e4426329b43cd6a025b99ac154f7e38"
+    },
+    {
       "name": "advanced-evaluation",
       "source": "skills/advanced-evaluation",
       "fileCount": 6,
@@ -16,11 +30,39 @@
       "sha256": "01d9ef2825afd144ce0cfa28b928c3bd7da28dff4ba2414df46c8b7117bc0c5b"
     },
     {
+      "name": "apqp",
+      "source": "skills/apqp",
+      "fileCount": 2,
+      "sizeBytes": 25911,
+      "sha256": "e9db21c15b3605329a90c239695689d581f86b7dfb0bf6569c7e59f250fb0e96"
+    },
+    {
+      "name": "architecture-blueprint-generator",
+      "source": "skills/architecture-blueprint-generator",
+      "fileCount": 1,
+      "sizeBytes": 13358,
+      "sha256": "d0f7d2480a0b7cf163a6648ab1dba7dbe1d4e8c43ca2df30f5ac99b4632d4320"
+    },
+    {
+      "name": "architecture-decision-records",
+      "source": "skills/architecture-decision-records",
+      "fileCount": 1,
+      "sizeBytes": 13171,
+      "sha256": "840d5c0cb99089ad0c690a4d09a3a9baa0b3065138dbd528b55081e542159901"
+    },
+    {
       "name": "awesome-skills",
       "source": "skills/awesome-skills",
       "fileCount": 2,
       "sizeBytes": 2352,
       "sha256": "db4387023f68361e7dfa87c04e63309fd272301add3cc135b29cb07d86508e1f"
+    },
+    {
+      "name": "bom",
+      "source": "skills/bom",
+      "fileCount": 9,
+      "sizeBytes": 157466,
+      "sha256": "142428a0a0ea6c95bac84f5baa004d15b96ae59240a21772f74ebb8555c23a6d"
     },
     {
       "name": "brainstorming",
@@ -30,11 +72,25 @@
       "sha256": "358c04b900b1fb0bb7383dce276f873ca1e2730ef0b07845271b5734eb34d4dc"
     },
     {
+      "name": "breakdown-feature-prd",
+      "source": "skills/breakdown-feature-prd",
+      "fileCount": 1,
+      "sizeBytes": 2479,
+      "sha256": "f9cbf935416a46ec57cd4c12c42b9515e2fea2b6c572bd1e370e7affa10c9af5"
+    },
+    {
       "name": "browser-use",
       "source": "skills/browser-use",
       "fileCount": 1,
       "sizeBytes": 10526,
       "sha256": "7ab68623aaabc6bb2930fced4508f97bd66ead381839ec9dccea29855a803230"
+    },
+    {
+      "name": "bus-drivers-i2c-spi",
+      "source": "skills/bus-drivers-i2c-spi",
+      "fileCount": 1,
+      "sizeBytes": 4005,
+      "sha256": "9bd962a6c85d853b9b55c3e471190729d62888f08b8a811914f5291e2def8af7"
     },
     {
       "name": "cli-creator",
@@ -58,6 +114,20 @@
       "sha256": "0123ab4d0cc57e4a1f68fe6f65aac3816e6dcdd997dec9da1e521bfc0f83ae2a"
     },
     {
+      "name": "control-plan",
+      "source": "skills/control-plan",
+      "fileCount": 2,
+      "sizeBytes": 30718,
+      "sha256": "bceff024a3c08537cc5cd61311d13904c8dff1c3ededee99d50a1b4d55cbfab3"
+    },
+    {
+      "name": "create-github-issues-for-unmet-specification-requirements",
+      "source": "skills/create-github-issues-for-unmet-specification-requirements",
+      "fileCount": 1,
+      "sizeBytes": 1275,
+      "sha256": "eb4c25200db0194759a13d0cb587c77b51d24cec4c4a3a7db5069c3383a98849"
+    },
+    {
       "name": "defuddle",
       "source": "skills/defuddle",
       "fileCount": 1,
@@ -65,11 +135,32 @@
       "sha256": "283815b08645d44a3f0edde31ba0ce85c2ab896ad6449cc91422e50eabc7ce4c"
     },
     {
+      "name": "dfmea-design",
+      "source": "skills/dfmea-design",
+      "fileCount": 2,
+      "sizeBytes": 21894,
+      "sha256": "759f9e02d16e93cc16a8ce8e52b186a07a729849e2d1dab77097574aa5bf3f15"
+    },
+    {
       "name": "dispatching-parallel-agents",
       "source": "skills/dispatching-parallel-agents",
       "fileCount": 1,
       "sizeBytes": 6078,
       "sha256": "09a03b40f55194f57dd9f03ddd3cf6bca56b29e26bca06af4782411e723ca2ae"
+    },
+    {
+      "name": "dvp-test-plan",
+      "source": "skills/dvp-test-plan",
+      "fileCount": 2,
+      "sizeBytes": 33954,
+      "sha256": "a916c918727fcf8a7aa3dd242cdb602ee172dfffbe99c3fe1d58b36f5258b50c"
+    },
+    {
+      "name": "emc",
+      "source": "skills/emc",
+      "fileCount": 9,
+      "sizeBytes": 364049,
+      "sha256": "89f11b23bfe23871e7e89c8195533c603f5785209716317974bc83b8e7f3b18b"
     },
     {
       "name": "evaluation",
@@ -114,6 +205,27 @@
       "sha256": "4839063d92c817a2ec2410ab35ce781303c662994390e902bcfb42933391c282"
     },
     {
+      "name": "fishbone-analysis",
+      "source": "skills/fishbone-analysis",
+      "fileCount": 2,
+      "sizeBytes": 27783,
+      "sha256": "3f347949fd79842a448fc2c45a65cfd6d89f0afcd0ceaf7b8915accbce146dc7"
+    },
+    {
+      "name": "fmea-reviewer",
+      "source": "skills/fmea-reviewer",
+      "fileCount": 1,
+      "sizeBytes": 9853,
+      "sha256": "53e7fb51aa319dc2fe55907839bbd5cb5719b96cf98fc9110ae3b5cac6827337"
+    },
+    {
+      "name": "freecad-scripts",
+      "source": "skills/freecad-scripts",
+      "fileCount": 6,
+      "sizeBytes": 68459,
+      "sha256": "9d1a5d9865fabd65858412c5430de2bef010fbe86469188802ecb72439f26136"
+    },
+    {
       "name": "frontend-design",
       "source": "skills/frontend-design",
       "fileCount": 2,
@@ -126,6 +238,27 @@
       "fileCount": 6,
       "sizeBytes": 32642,
       "sha256": "0236ac399e18ed8258c7960ee7402e2200277d66374a17448f2f8f72b8bd2a33"
+    },
+    {
+      "name": "github-actions-efficiency",
+      "source": "skills/github-actions-efficiency",
+      "fileCount": 5,
+      "sizeBytes": 11107,
+      "sha256": "22ae92f475385dc3685cd341ba9fff590b58f54c0672ceffb3259da67b825f18"
+    },
+    {
+      "name": "github-actions-hardening",
+      "source": "skills/github-actions-hardening",
+      "fileCount": 6,
+      "sizeBytes": 23885,
+      "sha256": "2b507f7117fdf3b6a349ce549eba8afdb3cd5800f351fbfb9159894f8b3b6fe9"
+    },
+    {
+      "name": "gtm-technical-product-pricing",
+      "source": "skills/gtm-technical-product-pricing",
+      "fileCount": 1,
+      "sizeBytes": 13108,
+      "sha256": "d91a896d328b21038f9aac5c83836da04a876ff06afb8c82dabae1998de02315"
     },
     {
       "name": "guizang-ppt-skill",
@@ -184,6 +317,13 @@
       "sha256": "fa58a1efbe7758d8f753317d0ccf622659ad97689e4c80320c5cd8dd821deecd"
     },
     {
+      "name": "is-is-not-scoping",
+      "source": "skills/is-is-not-scoping",
+      "fileCount": 2,
+      "sizeBytes": 20525,
+      "sha256": "e702a79ccd81117960cd8f5b8f03202ba6d5148b8d44f0b805e423fac990af43"
+    },
+    {
       "name": "json-canvas",
       "source": "skills/json-canvas",
       "fileCount": 2,
@@ -198,11 +338,67 @@
       "sha256": "c96c789546839fcea65f64b06d0830573eee484700921bf7e0553d5647f15ebd"
     },
     {
+      "name": "kicad",
+      "source": "skills/kicad",
+      "fileCount": 82,
+      "sizeBytes": 2911890,
+      "sha256": "329e198dc9ca0c980952f65234cf8ee57e75a8d8eef5ee5a2cfd9dc524e63cd8"
+    },
+    {
+      "name": "matlab-analyze-em",
+      "source": "skills/matlab-analyze-em",
+      "fileCount": 2,
+      "sizeBytes": 20365,
+      "sha256": "60729797d8af55d45a360f6550bf43093ea79a50ac014f23c6cd238e2e2a2018"
+    },
+    {
+      "name": "matlab-analyze-pcb-pdn",
+      "source": "skills/matlab-analyze-pcb-pdn",
+      "fileCount": 3,
+      "sizeBytes": 24125,
+      "sha256": "2386ba9349b25c85081f477016f5cc959b8a2e36f78569e4194cdbc938583ccd"
+    },
+    {
+      "name": "matlab-analyze-spectrum",
+      "source": "skills/matlab-analyze-spectrum",
+      "fileCount": 14,
+      "sizeBytes": 99106,
+      "sha256": "a4adf24b12ccd68c7310b19cc2aa8d3cfc9d6330780b495ddf897f80038cc81b"
+    },
+    {
+      "name": "matlab-deploy-embedded-code",
+      "source": "skills/matlab-deploy-embedded-code",
+      "fileCount": 4,
+      "sizeBytes": 17273,
+      "sha256": "445923866c30711c59b75801487c1b0191b7d8dfed0c50aed152c617d1937ac9"
+    },
+    {
+      "name": "matlab-integrate-pcb-circuit",
+      "source": "skills/matlab-integrate-pcb-circuit",
+      "fileCount": 2,
+      "sizeBytes": 19037,
+      "sha256": "bb4086f2419b8b976f97f4b2c1697b62986e34d8b647aed0880a0bc2df94f5ae"
+    },
+    {
+      "name": "matlab-read-pcb-layout",
+      "source": "skills/matlab-read-pcb-layout",
+      "fileCount": 2,
+      "sizeBytes": 19325,
+      "sha256": "26ce2dc67aa28c8f5dab13b00bba9ef557b2af17787e147d6529f2db0086fbb1"
+    },
+    {
       "name": "mcp-builder",
       "source": "skills/mcp-builder",
       "fileCount": 10,
       "sizeBytes": 121756,
       "sha256": "ec81ba0fa15ad953b0a18b0b0379fa9c0f6bd7b14f03d9a555f29280d309882b"
+    },
+    {
+      "name": "mcp-security-audit",
+      "source": "skills/mcp-security-audit",
+      "fileCount": 1,
+      "sizeBytes": 8925,
+      "sha256": "7ba8f2d382ab4fe265cc5c7fb81993dc316798666a174b26b3497d553c597dac"
     },
     {
       "name": "mechanical-cad-review",
@@ -240,11 +436,32 @@
       "sha256": "25b6ced399a5c0414f57d493d5448009644626de8c4fd8e6d519d62d7f13428a"
     },
     {
+      "name": "pfmea-process",
+      "source": "skills/pfmea-process",
+      "fileCount": 3,
+      "sizeBytes": 30401,
+      "sha256": "010137012762726bd324f5b9510a77ab518487da0976e716ed23595f52b106ef"
+    },
+    {
       "name": "planning-with-files",
       "source": "skills/planning-with-files",
       "fileCount": 32,
       "sizeBytes": 393835,
       "sha256": "40ff63504675c8b3cc8670bdf106eeeef7998b21299aa3d8bbe0cb392e5b1a9f"
+    },
+    {
+      "name": "ppap",
+      "source": "skills/ppap",
+      "fileCount": 2,
+      "sizeBytes": 37417,
+      "sha256": "bd7fbfdd9555f9c8ef49e4db7317ba80f881a10735173f2cd901518678cf98b9"
+    },
+    {
+      "name": "prd",
+      "source": "skills/prd",
+      "fileCount": 1,
+      "sizeBytes": 4307,
+      "sha256": "2e8f81c6a85a3b21041abc1cad3add43a97285418bffa7543d30c306d91b7b69"
     },
     {
       "name": "receiving-code-review",
@@ -289,6 +506,13 @@
       "sha256": "2577f07e91925207e9652844b041144f19f667461332c0adf13375696b26c4ce"
     },
     {
+      "name": "spice",
+      "source": "skills/spice",
+      "fileCount": 13,
+      "sizeBytes": 298561,
+      "sha256": "19e5331ed535a3abb1d6ead979842d7b959aa9a81068b556f8b6adfc88c19f4c"
+    },
+    {
       "name": "subagent-driven-development",
       "source": "skills/subagent-driven-development",
       "fileCount": 7,
@@ -301,6 +525,13 @@
       "fileCount": 10,
       "sizeBytes": 78189,
       "sha256": "1d7124e52dfd48b86752013fb4b4db89b288461cc279ec93ff7c4d89ba52fd90"
+    },
+    {
+      "name": "supply-chain-security",
+      "source": "skills/supply-chain-security",
+      "fileCount": 11,
+      "sizeBytes": 32072,
+      "sha256": "b3b68cd4aeed0612d2167a4c2c3b74647e8d72b820458479912d0cc5e0338908"
     },
     {
       "name": "systematic-debugging",

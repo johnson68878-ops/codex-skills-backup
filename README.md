@@ -1,22 +1,18 @@
 # Codex Skills Backup
 
-![53 Codex Skills — Complete SA Engineering Directory](docs/assets/53-codex-skills-complete-directory.png)
-
-[Compact capability-map version](docs/assets/53-codex-skills-sa-infographic.png)
-
-[![Skills](https://img.shields.io/badge/Personal%20Skills-53-00bcd4)](manifests/personal-skills.json)
-[![Verification](https://img.shields.io/badge/Verification-53%2F53-success)](docs/verification-2026-09-13.md)
+[![Skills](https://img.shields.io/badge/Personal%20Skills-86-00bcd4)](manifests/personal-skills.json)
+[![Verification](https://img.shields.io/badge/Verification-86%2F86-success)](docs/verification-2026-09-15.md)
 [![Platform](https://img.shields.io/badge/Platform-Codex-2563eb)](https://github.com/openai/codex)
 
 Reproducible backup of the personal Codex Skills installed and verified by `johnson68878-ops`.
 
-This is a shareable, reproducible collection of 53 Skills assembled, installed and verified for wearable-system architecture, software engineering, web automation, knowledge workflows and AI evaluation. Individual Skills retain their upstream authorship and license terms; this repository does not claim original authorship of third-party content.
+This is a shareable, reproducible collection of 86 Skills assembled, installed and verified for wearable-system architecture, electronics, PCB and mechanical engineering, software delivery, product management, quality systems, web automation, knowledge workflows and AI evaluation. Individual Skills retain their upstream authorship and license terms; this repository does not claim original authorship of third-party content.
 
-This repository vendors **53 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (52) and `%USERPROFILE%\.agents\skills` (1). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has passed the local 53-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
+This repository vendors **86 personal Skills**, collected from `%USERPROFILE%\.codex\skills` (52) and `%USERPROFILE%\.agents\skills` (34). It intentionally excludes `.system`, authentication data, conversations, browser profiles, Codex configuration credentials, and plugin caches. Plugin-provided Skills are listed in `manifests/plugin-skills.json`; reconnect those plugins separately in Codex App because their account permissions and MCP services cannot be restored by copying files. The current Windows machine has passed the local 86-Skill structure and known-command health audit; account-bound integrations are listed in the verification report.
 
 Read the [original 46-Skill analysis and seven installed additions](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. All seven recommendations in that report are now installed.
 
-To install the complete collection through Codex, copy the ready-made prompt in [Install all 53 Skills with Codex](docs/INSTALL-WITH-CODEX.zh-TW.md). The same guide includes a direct PowerShell command.
+To install the complete collection through Codex, copy the ready-made prompt in [Install all 86 Skills with Codex](docs/INSTALL-WITH-CODEX.zh-TW.md). The same guide includes a direct PowerShell command.
 
 ## Install on the company computer
 
@@ -30,7 +26,7 @@ Set-ExecutionPolicy -Scope Process Bypass
 .\scripts\verify.ps1
 ```
 
-All 53 entries restore into `%USERPROFILE%\.codex\skills`. On a machine that already has a same-named Skill in `.agents\skills`, compare it before restoring to avoid cross-directory duplicates. Start a new conversation to refresh discovery; restart Codex App if the new Skills do not appear. Installing Skill files does not install their external CLIs or authorize external services.
+All 86 entries restore into `%USERPROFILE%\.codex\skills`. On a machine that already has a same-named Skill in `.agents\skills`, compare it before restoring to avoid cross-directory duplicates. Start a new conversation to refresh discovery; restart Codex App if the new Skills do not appear. Installing Skill files does not install their external CLIs or authorize external services.
 
 The installer is conservative:
 
@@ -58,7 +54,7 @@ Set-Location .\codex-skills-backup
 .\scripts\verify.ps1 -AdditionalSkillsRoot "$env:USERPROFILE\.agents\skills"
 .\tests\SkillsBackup.Tests.ps1
 .\tests\SkillsHealth.Tests.ps1
-.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 53 -UseKnownRuntimeRequirements
+.\scripts\Test-SkillsHealth.ps1 -SkillRoots "$env:USERPROFILE\.codex\skills","$env:USERPROFILE\.agents\skills" -ExpectedCount 86 -UseKnownRuntimeRequirements
 git status --short
 ```
 
@@ -70,4 +66,4 @@ Omit `-AdditionalSkillsRoot` if there is no additional Skill directory. Duplicat
 
 ## Plugin reconnection
 
-After restoring personal Skills, open Codex App and reconnect the plugins you need, such as GitHub, Google Drive and Figma. The inventory in `manifests/plugin-skills.json` documents what was available on the source PC, but it contains no credentials or authorization tokens. See [the dated verification report](docs/verification-2026-09-13.md) for the tested runtimes and remaining sign-in conditions.
+After restoring personal Skills, open Codex App and reconnect the plugins you need, such as GitHub, Google Drive and Figma. The inventory in `manifests/plugin-skills.json` documents what was available on the source PC, but it contains no credentials or authorization tokens. See [the dated verification report](docs/verification-2026-09-15.md) for the tested runtimes and remaining sign-in conditions.
