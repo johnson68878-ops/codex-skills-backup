@@ -12,6 +12,8 @@ This repository vendors **86 personal Skills**, collected from `%USERPROFILE%\.c
 
 Read the [original 46-Skill analysis and seven installed additions](docs/SKILLS-46-ANALYSIS.zh-TW.md) for capabilities, engineering use cases, dependencies, and overlap. These are workflow/tool packages, not trained model weights. All seven recommendations in that report are now installed.
 
+For a shareable Traditional Chinese overview of every Skill, including category summaries, use cases, and company rollout guidance, see the [complete 86-Skill categorized guide](docs/SKILLS-CATALOG.zh-TW.md).
+
 To install the complete collection through Codex, copy the ready-made prompt in [Install all 86 Skills with Codex](docs/INSTALL-WITH-CODEX.zh-TW.md). The same guide includes a direct PowerShell command.
 
 ## Install on the company computer
