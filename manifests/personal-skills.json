@@ -156,6 +156,13 @@
       "sha256": "a916c918727fcf8a7aa3dd242cdb602ee172dfffbe99c3fe1d58b36f5258b50c"
     },
     {
+      "name": "embedded-systems",
+      "source": "skills/embedded-systems",
+      "fileCount": 7,
+      "sizeBytes": 58652,
+      "sha256": "e3666e0258c798c70ab3e0d7f33df5b8e5514252b8f79243d63a93735ec44a5c"
+    },
+    {
       "name": "emc",
       "source": "skills/emc",
       "fileCount": 9,

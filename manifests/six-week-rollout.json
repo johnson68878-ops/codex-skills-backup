@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "timezone": "Asia/Shanghai",
+  "baselineCommit": "7bc24da5869af1605b840bd637a73f01a40a041d",
+  "baselineTotal": 86,
+  "maxBatchesPerWeek": 1,
+  "weeks": [
+    {
+      "week": 1,
+      "date": "2026-10-26",
+      "theme": "嵌入式架構與低功耗",
+      "skills": [
+        "embedded-systems"
+      ],
+      "primaryCategory": "硬體與嵌入式架構",
+      "targetTotal": 87,
+      "status": "released"
+    },
+    {
+      "week": 2,
+      "date": "2026-11-02",
+      "theme": "實驗設計與驗證規劃",
+      "skills": [
+        "experimental-design"
+      ],
+      "primaryCategory": "品質與驗證",
+      "targetTotal": 88,
+      "status": "planned"
+    },
+    {
+      "week": 3,
+      "date": "2026-11-09",
+      "theme": "統計判讀與工程決策",
+      "skills": [
+        "statistical-analysis"
+      ],
+      "primaryCategory": "資料、AI 與知識工作流",
+      "targetTotal": 89,
+      "status": "planned"
+    },
+    {
+      "week": 4,
+      "date": "2026-11-16",
+      "theme": "穿戴式生理訊號分析",
+      "skills": [
+        "neurokit2"
+      ],
+      "primaryCategory": "資料、AI 與知識工作流",
+      "targetTotal": 90,
+      "status": "planned"
+    },
+    {
+      "week": 5,
+      "date": "2026-11-23",
+      "theme": "工程圖表與架構溝通",
+      "skills": [
+        "scientific-visualization"
+      ],
+      "primaryCategory": "技術溝通與視覺呈現",
+      "targetTotal": 91,
+      "status": "planned"
+    },
+    {
+      "week": 6,
+      "date": "2026-11-30",
+      "theme": "簡報風格與知識工作流",
+      "skills": [
+        "theme-factory",
+        "deeptutor-cli"
+      ],
+      "primaryCategory": "技術溝通與視覺呈現",
+      "targetTotal": 93,
+      "status": "planned",
+      "categoryOverrides": {
+        "deeptutor-cli": "資料、AI 與知識工作流"
+      }
+    }
+  ]
+}

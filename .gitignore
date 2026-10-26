@@ -26,3 +26,6 @@ Thumbs.db
 !skills/planning-with-files/templates/task_plan.md
 !skills/planning-with-files/templates/findings.md
 !skills/planning-with-files/templates/progress.md
+
+# Reviewed placeholder-only template required by the backup manifest
+!skills/huggingface-community-evals/examples/.env.example
