@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "updated": "2026-10-26",
+  "updated": "2026-11-09",
   "note": "Each vendored skill has exactly one primary capability category. Integrations/templates are counted separately.",
   "skills": {
     "5why-root-cause": "品質與驗證",
@@ -89,6 +89,7 @@
     "verification-before-completion": "軟體交付與治理",
     "webapp-testing": "軟體交付與治理",
     "writing-plans": "軟體交付與治理",
-    "writing-skills": "資料、AI 與知識工作流"
+    "writing-skills": "資料、AI 與知識工作流",
+    "experimental-design": "品質與驗證"
   }
 }

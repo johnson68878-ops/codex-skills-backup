@@ -37,3 +37,6 @@
 20 個 OpenAI 模板與系統來源 review-agent 採整合清單方式，與個人技能數量分開。計畫總計新增 7 個可備份技能，86 → 93；不重複計算快取副本。
 
 自建 wearable-system-architecture-review、wearable-power-budget、architecture-review-deck 尚未獲准開發，本計畫不建立這三個技能。
+
+## 實際發布狀態（2026-11-09）
+W1已發布；W2於2026-11-09發布。W3及後續仍待發布。本次僅補發最早到期的W2，不同時發布W3。

@@ -184,6 +184,13 @@
       "sha256": "5b6ec125c94c5be4232c6c5352bdd9f33dadff931d32e4543d1d21b4ca7c016c"
     },
     {
+      "name": "experimental-design",
+      "source": "skills/experimental-design",
+      "fileCount": 8,
+      "sizeBytes": 67966.0,
+      "sha256": "335f54c667e0a16a0e225b4203b7e4d81d089b0d78d6338cbd39e4f59acf5e3e"
+    },
+    {
       "name": "figma",
       "source": "skills/figma",
       "fileCount": 8,

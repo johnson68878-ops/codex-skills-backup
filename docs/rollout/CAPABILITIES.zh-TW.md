@@ -1,22 +1,22 @@
 # Skills 功能分布（本週發布後）
 
-更新：2026-10-26。只統計 `personal-skills.json` 的 87 個已收錄 Skill；不把未來計畫、模板副本或外掛服務重複計數。
+更新：2026-11-09。只統計 `personal-skills.json` 的 88 個已收錄 Skill；不把未來計畫、模板副本或外掛服務重複計數。
 
 | 能力領域 | 已收錄數量 |
 |---|---:|
-| 品質與驗證 | 11 |
+| 品質與驗證 | 12 |
 | 硬體與嵌入式架構 | 16 |
 | 軟體交付與治理 | 24 |
 | 資料、AI 與知識工作流 | 15 |
 | 需求、商業與技術調研 | 7 |
 | 技術溝通與視覺呈現 | 14 |
-| **合計** | **87** |
+| **合計** | **88** |
 
 每個 Skill 只歸入一個主要領域；跨領域用途仍可存在。檔案收錄不等於帳號授權、工具安裝或實機驗證。
 
 ## 品質與驗證
 
-`5why-root-cause`, `action-priority-ap`, `apqp`, `control-plan`, `dfmea-design`, `dvp-test-plan`, `fishbone-analysis`, `fmea-reviewer`, `is-is-not-scoping`, `pfmea-process`, `ppap`
+`5why-root-cause`, `action-priority-ap`, `apqp`, `control-plan`, `dfmea-design`, `dvp-test-plan`, `experimental-design`, `fishbone-analysis`, `fmea-reviewer`, `is-is-not-scoping`, `pfmea-process`, `ppap`
 
 ## 硬體與嵌入式架構
 
