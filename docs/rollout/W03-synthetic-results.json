@@ -1,0 +1,22 @@
+{
+  "data": "synthetic",
+  "seed": 20261117,
+  "n": [
+    40,
+    45
+  ],
+  "mean_difference_A_minus_B": -0.7648388509800803,
+  "welch_t": -2.6722818305311193,
+  "p_two_sided": 0.009167326866161186,
+  "ci95": [
+    -1.3346321227126756,
+    -0.1950455792474849
+  ],
+  "cohen_d_descriptive": -0.5683044178868046,
+  "shapiro_p": [
+    0.23465103201136522,
+    0.682931950509124
+  ],
+  "levene_p": 0.0024776779176116795,
+  "checks": "Welch statistic, p-value and CI independently cross-checked"
+}

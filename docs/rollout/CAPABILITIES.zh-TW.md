@@ -1,16 +1,16 @@
 # Skills 功能分布（本週發布後）
 
-更新：2026-11-09。只統計 `personal-skills.json` 的 88 個已收錄 Skill；不把未來計畫、模板副本或外掛服務重複計數。
+更新：2026-11-17。只統計 `personal-skills.json` 的 89 個已收錄 Skill；不把未來計畫、模板副本或外掛服務重複計數。
 
 | 能力領域 | 已收錄數量 |
 |---|---:|
 | 品質與驗證 | 12 |
 | 硬體與嵌入式架構 | 16 |
 | 軟體交付與治理 | 24 |
-| 資料、AI 與知識工作流 | 15 |
+| 資料、AI 與知識工作流 | 16 |
 | 需求、商業與技術調研 | 7 |
 | 技術溝通與視覺呈現 | 14 |
-| **合計** | **88** |
+| **合計** | **89** |
 
 每個 Skill 只歸入一個主要領域；跨領域用途仍可存在。檔案收錄不等於帳號授權、工具安裝或實機驗證。
 
@@ -28,7 +28,7 @@
 
 ## 資料、AI 與知識工作流
 
-`advanced-evaluation`, `awesome-skills`, `cli-creator`, `evaluation`, `find-skills`, `huggingface-community-evals`, `huggingface-llm-trainer`, `huggingface-local-models`, `json-canvas`, `jupyter-notebook`, `mcp-builder`, `obsidian-bases`, `obsidian-cli`, `obsidian-markdown`, `writing-skills`
+`advanced-evaluation`, `awesome-skills`, `cli-creator`, `evaluation`, `find-skills`, `huggingface-community-evals`, `huggingface-llm-trainer`, `huggingface-local-models`, `json-canvas`, `jupyter-notebook`, `mcp-builder`, `obsidian-bases`, `obsidian-cli`, `obsidian-markdown`, `statistical-analysis`, `writing-skills`
 
 ## 需求、商業與技術調研
 

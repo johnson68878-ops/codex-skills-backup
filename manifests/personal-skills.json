@@ -527,6 +527,13 @@
       "sha256": "19e5331ed535a3abb1d6ead979842d7b959aa9a81068b556f8b6adfc88c19f4c"
     },
     {
+      "name": "statistical-analysis",
+      "source": "skills/statistical-analysis",
+      "fileCount": 8,
+      "sizeBytes": 121578.0,
+      "sha256": "6fea45bbeb78e026318e4ba753e7dfb757fd86a175c30d356944eeb7491e82fb"
+    },
+    {
       "name": "subagent-driven-development",
       "source": "skills/subagent-driven-development",
       "fileCount": 7,
