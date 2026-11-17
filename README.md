@@ -30,7 +30,7 @@ A curated, reproducible collection of AI workflows for wearable-system architect
 PowerShell 7.2 or later:
 
 ```powershell
-git clone https://github.com/johnson68978-ops/codex-skills-backup.git
+git clone https://github.com/johnson68878-ops/codex-skills-backup.git
 Set-Location .\codex-skills-backup
 .\scripts\install.ps1 -WhatIf
 .\scripts\install.ps1
